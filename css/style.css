@@ -1,0 +1,207 @@
+/* Reset the default browser style*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Application Style */
+
+@font-face {font-family: 'HelveticaNeueUltraLight';src: url('../fonts/HelveticaNeue-UltraLight.eot');src: url('../fonts/HelveticaNeue-UltraLight.eot?#iefix') format('embedded-opentype'),url('../fonts/HelveticaNeue-UltraLight.woff') format('woff'),url('../fonts/HelveticaNeue-UltraLight.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeueLight';src: url('../fonts/HelveticaNeue-Light.eot');src: url('../fonts/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'),url('../fonts/HelveticaNeue-Light.woff') format('woff'),url('../fonts/HelveticaNeue-Light.ttf') format('truetype');}
+
+/* General Styles*/
+body {
+	background: url('../img/bg.png');
+	font-size: 100%;
+}
+
+.home-logo img{
+	width: 100%;
+}
+
+.home-logo {
+	position: absolute;
+  	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.main-container {
+	padding: 10px 5px;
+	width: 100%;
+}
+
+.logo-img {
+	text-align: center;
+	padding: 30px 0 20px;
+}
+
+.logo-img h1{
+	max-width: 410px;
+	max-height: 90px;
+	display: inline-block;
+}
+
+.logo-img img {
+	width: 80%;
+}
+
+.style-1 {
+	font-size: 1em;
+	font-family: "HelveticaNeueUltraLight";
+	color: #fff;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.sslogin-btns, .ext-user-btn {
+	text-align: center;
+}
+
+.sslogin-btns, .ext-user-btn, .user-login {
+	margin: 50px 0 0;
+	font-family: "HelveticaNeueLight";
+}
+
+.sslogin-btns p, .sslogin-btns a {
+	font-size: 1.2em;
+}
+
+.sslogin-btns p, .sslogin-btns a, .ext-user-btn a, .ext-user-btn p, .user-login p {
+	color: #fff;
+}
+
+.sslogin-btns a {
+	margin: 20px 0;
+	padding: 30px 0;
+	display: inline-block;
+	width: 80%;
+	text-decoration: none;
+	border: 1px solid #ffd61a;
+}
+
+.ext-user-btn p, .user-login p{
+	font-size: 1em;
+	margin: 20px 0;
+}
+
+.btn-primary{
+	padding: 20px 50px;
+	background-color: #18bcae;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.2em;
+	color: #fff;
+}
+
+.ext-user-btn p a, .user-login p a{
+	text-decoration: none;
+	color: #18bcae;
+}
+
+.user-login {
+	padding: 0 30px;
+}
+
+.user-login div {
+	margin-top: 10px;
+}
+
+.user-login label, .user-login input, .search-section label{
+	display: block;
+	color: #fff;
+	font-size: 1.2em;
+	width: 90%;
+	margin: 10px 0;
+}
+
+.user-login input {
+	background: transparent;
+	border: none;
+	border: 1px solid #ffd61a;
+	padding: 20px 10px;
+	font-size: 1em;
+	outline: none;
+}
+
+.btn-login, .next-btn {
+	padding: 40px 0 10px;
+	text-align: center;
+}
+
+.user-login p {
+	text-align: center;
+}
+
+.search-section {
+	margin: 70px 0 0 30px;
+	font-family: "HelveticaNeueLight";
+}
+
+.selector-wrapper{
+    border: 1px solid #ffd61a;
+    width: 85%;
+    margin-bottom: 10%;
+    overflow: hidden;
+    background-image: url("../img/down-arrow.png");
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    background-size: 25px 13px;
+    padding-right: 10px;
+    outline: none;
+}
+
+.search-section div select {
+    width: 110%;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'calibri';
+    font-weight: 300;
+    padding: 15px 20px 15px 10px;
+    border: none;
+}
+
+.search-section div select option {
+	color: #000;
+}
