@@ -68,7 +68,6 @@ body {
 
 .main-container {
 	padding: 10px 5px;
-	width: 100%;
 }
 
 .logo-img {
@@ -147,7 +146,7 @@ body {
 	margin-top: 10px;
 }
 
-.user-login label, .user-login input, .search-section label{
+.user-login label, .user-login input, .search-location label{
 	display: block;
 	color: #fff;
 	font-size: 1.2em;
@@ -173,7 +172,7 @@ body {
 	text-align: center;
 }
 
-.search-section {
+.search-location {
 	margin: 70px 0 0 30px;
 	font-family: "HelveticaNeueLight";
 }
@@ -191,7 +190,7 @@ body {
     outline: none;
 }
 
-.search-section div select {
+.search-location div select {
     width: 110%;
     background-color: transparent;
     color: #fff;
@@ -202,6 +201,57 @@ body {
     border: none;
 }
 
-.search-section div select option {
+.search-location div select option {
 	color: #000;
+}
+
+.header-section {
+	background-color: #000;
+	color: #fff;
+	overflow: hidden;
+	padding: 25px 0 15px;
+}
+
+.header-section a {
+	float: left;
+	padding: 5px 0 0 10px;
+}
+
+.header-section h1 {
+	text-align: center;
+}
+
+.search-section {
+	background-color: #ffd61a;
+}
+
+.search-field {
+    max-height: 70px;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.search-field a {
+    width: 5%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.search-field a img {
+	width: 100%;
+}
+
+.search-field input{
+    width: 85%;
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 2% 1%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.searcg-by-items img{
+	width: 100%;
 }
