@@ -45,9 +45,10 @@ table {
 }
 
 /* Application Style */
-
+@font-face {font-family: 'HelveticaNeue';src: url('../fonts/HelveticaNeue.eot');src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),url('../fonts/HelveticaNeue.woff') format('woff'),url('../fonts/HelveticaNeue.ttf') format('truetype');}
 @font-face {font-family: 'HelveticaNeueUltraLight';src: url('../fonts/HelveticaNeue-UltraLight.eot');src: url('../fonts/HelveticaNeue-UltraLight.eot?#iefix') format('embedded-opentype'),url('../fonts/HelveticaNeue-UltraLight.woff') format('woff'),url('../fonts/HelveticaNeue-UltraLight.ttf') format('truetype');}
 @font-face {font-family: 'HelveticaNeueLight';src: url('../fonts/HelveticaNeue-Light.eot');src: url('../fonts/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'),url('../fonts/HelveticaNeue-Light.woff') format('woff'),url('../fonts/HelveticaNeue-Light.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeueLTProTh';src: url('../fonts/HelveticaNeueLTPro-Th_1.eot');src: url('../fonts/HelveticaNeueLTPro-Th_1.eot?#iefix') format('embedded-opentype'),url('../fonts/HelveticaNeueLTPro-Th_1.woff') format('woff'),url('../fonts/HelveticaNeueLTPro-Th_1.ttf') format('truetype');}
 
 /* General Styles*/
 body {
@@ -67,7 +68,7 @@ body {
 }
 
 .main-container {
-	padding: 10px 5px;
+	padding: 10px 0;
 }
 
 .logo-img {
@@ -252,6 +253,123 @@ body {
     outline: none;
 }
 
-.searcg-by-items img{
+.search-by-items img{
 	width: 100%;
+}
+
+.search-result-item {
+	padding: 20px 20px 15px;
+	font-family: "HelveticaNeueLTProTh";
+	background: #fff url("../img/right-arrows.png") no-repeat 95% center;
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+
+.search-result-item h2{
+	font-size: 1em;
+	padding-bottom: 10px;
+}
+
+.search-result-item p{
+	font-size: 0.8em;
+	padding-bottom: 5px;
+}
+
+.search-results li {
+	margin-bottom: 1px;
+}
+
+.add-to-fav {
+	float: right;
+    color: #000;
+    text-decoration: none;
+    width: 70px;
+    text-align: center;
+    font-family: "HelveticaNeueLTProTh";
+    font-size: 0.8em;
+}
+.search-result-detail {
+	font-family: "HelveticaNeueLTProTh";
+	background-color: #fff;
+	padding: 0 10px;
+}
+
+.search-result-detail h2{
+ 	padding: 20px 0 20px 0;
+ 	font-size: 1.2em;
+ 	font-weight: bold;
+ }
+
+.search-result-detail h3{
+ 	font-weight: bold;
+ 	font-size: 0.8em;
+ 	padding: 0 0 5px;
+ }
+
+.search-result-detail li{
+ 	padding: 10px 0;
+ }
+
+.search-result-detail p{
+ 	font-size: 0.8em;
+ 	line-height: 1.3;
+ }
+
+.location-rating .location-dtl, .location-rating .rating-dtl{
+ 	float: left;
+ 	padding: 10px 10px 10px 0;
+ }
+
+ .location-rating .location-dtl {
+ 	width: 40%;
+ }
+
+.location-rating .rating-dtl{
+	border-left: 1px solid #ffd61a;
+	padding-left: 10px;
+}
+
+.location-rating .rating-dtl h3{
+	padding-left: 5px; 
+}
+
+.location-rating {
+ 	overflow: hidden;
+ 	border-top: 1px solid #ffd61a;
+ 	border-bottom: 1px solid #ffd61a;
+ }
+
+div.stars {
+  display: inline-block;
+}
+
+input.star { display: none; }
+
+label.star {
+  float: right;
+  padding: 5px;
+  font-size: 16px;
+  color: #444;
+  transition: all .2s;
+}
+
+input.star ~ label.star:before {
+	color: gray;
+}
+
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+
+input.star-1:checked ~ label.star:before { color: #F62; }
+
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+
+label.star:before {
+  content: '\f005';
+  font-family: FontAwesome;
+  color: gray;
 }
